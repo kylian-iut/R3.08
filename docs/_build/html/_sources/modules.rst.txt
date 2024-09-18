@@ -8,3 +8,6 @@ src
    alpha
    bravo
    gamma
+   point
+   rectangle
+   triangle
