@@ -61,7 +61,7 @@ class Cercle:
             return True
         else:
             return False
-    def point(self, a : float, b : float):
+    def point(self, a : float, b : float) -> bool:
         """
             Méthode qui vérifie si le point de coordonnées (a,b) fait parti du cercle
         :param a: x valeur de coordonné en abscisse du point

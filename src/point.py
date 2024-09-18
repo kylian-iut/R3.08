@@ -32,22 +32,22 @@ class Point:
         else:
             raise ValueError("y n'est pas un réel")
 
-    def distanceCoord(self, a: float, b: float):
+    def distanceCoord(self, a: float, b: float) -> float:
         """
             Méthode qui calcul la distance entre le point et des coordonnées
         :param a: x (abscisse)
         :param b: y (ordonnée)
         :return: float
         """
-        return sqrt((self.y - b) ** 2 + (self.x - a) ** 2)
+        return sqrt((self.__y - b) ** 2 + (self.__x - a) ** 2)
 
-    def distancePoint(self, camarade):
+    def distancePoint(self, camarade) -> float:
         """
             Méthode qui calcul la distance entre deux points
         :param camarade: Point
         :return: float
         """
-        return sqrt((self.y - camarade.y) ** 2 + (self.x - camarade.x) ** 2)
+        return sqrt((self.__y - camarade.__y) ** 2 + (self.__x - camarade.__x) ** 2)
 
 def principale():
     A = Point()
