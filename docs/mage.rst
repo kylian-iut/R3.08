@@ -1,7 +1,7 @@
-cercle module
-=============
+mage module
+===========
 
-.. automodule:: cercle
+.. automodule:: mage
    :members:
    :undoc-members:
    :show-inheritance:

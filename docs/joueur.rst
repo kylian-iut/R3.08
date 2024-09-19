@@ -1,7 +1,7 @@
-point module
-============
+joueur module
+=============
 
-.. automodule:: point
+.. automodule:: joueur
    :members:
    :undoc-members:
    :show-inheritance:

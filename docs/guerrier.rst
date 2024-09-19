@@ -1,7 +1,7 @@
-exemple1 module
+guerrier module
 ===============
 
-.. automodule:: exemple1
+.. automodule:: guerrier
    :members:
    :undoc-members:
    :show-inheritance:

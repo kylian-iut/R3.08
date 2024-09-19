@@ -3,7 +3,7 @@
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Recherche" href="search.html" /><link rel="next" title="exemple1 module" href="exemple1.html" /><link rel="prev" title="Test documentation" href="index.html" />
+<link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Recherche" href="search.html" /><link rel="next" title="personnage module" href="personnage.html" /><link rel="prev" title="Test documentation" href="index.html" />
 
     <!-- Generated with Sphinx 8.0.2 and Furo 2024.08.06 -->
         <title>src - Documentation Test 1.0</title>
@@ -201,13 +201,10 @@
   <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
 <li class="toctree-l1 current has-children current-page"><a class="current reference internal" href="#">src</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle navigation of src</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="exemple1.html">exemple1 module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="alpha.html">alpha module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="bravo.html">bravo module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="gamma.html">gamma module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="point.html">point module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="rectangle.html">rectangle module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="triangle.html">triangle module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="personnage.html">personnage module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="joueur.html">joueur module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="guerrier.html">guerrier module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mage.html">mage module</a></li>
 </ul>
 </li>
 </ul>
@@ -254,62 +251,42 @@
 <h1>src<a class="headerlink" href="#src" title="Lien vers cette rubrique">¶</a></h1>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="exemple1.html">exemple1 module</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="exemple1.html#exemple1.Velo"><code class="docutils literal notranslate"><span class="pre">Velo</span></code></a><ul>
-<li class="toctree-l3"><a class="reference internal" href="exemple1.html#exemple1.Velo.gear_down"><code class="docutils literal notranslate"><span class="pre">Velo.gear_down()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="exemple1.html#exemple1.Velo.gear_up"><code class="docutils literal notranslate"><span class="pre">Velo.gear_up()</span></code></a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="exemple1.html#exemple1.affiche"><code class="docutils literal notranslate"><span class="pre">affiche()</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="exemple1.html#exemple1.principale"><code class="docutils literal notranslate"><span class="pre">principale()</span></code></a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="alpha.html">alpha module</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="alpha.html#alpha.addition"><code class="docutils literal notranslate"><span class="pre">addition()</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="alpha.html#alpha.maximum"><code class="docutils literal notranslate"><span class="pre">maximum()</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="alpha.html#alpha.plusgrand"><code class="docutils literal notranslate"><span class="pre">plusgrand()</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="alpha.html#alpha.repeat"><code class="docutils literal notranslate"><span class="pre">repeat()</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="alpha.html#alpha.seuil"><code class="docutils literal notranslate"><span class="pre">seuil()</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="alpha.html#alpha.smallist"><code class="docutils literal notranslate"><span class="pre">smallist()</span></code></a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="bravo.html">bravo module</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="bravo.html#bravo.Tasse"><code class="docutils literal notranslate"><span class="pre">Tasse</span></code></a><ul>
-<li class="toctree-l3"><a class="reference internal" href="bravo.html#bravo.Tasse.contenu"><code class="docutils literal notranslate"><span class="pre">Tasse.contenu()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="bravo.html#bravo.Tasse.matiere"><code class="docutils literal notranslate"><span class="pre">Tasse.matiere</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="bravo.html#bravo.Tasse.vide"><code class="docutils literal notranslate"><span class="pre">Tasse.vide()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="personnage.html">personnage module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="personnage.html#personnage.Personnage"><code class="docutils literal notranslate"><span class="pre">Personnage</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="personnage.html#personnage.Personnage.attaque"><code class="docutils literal notranslate"><span class="pre">Personnage.attaque()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="personnage.html#personnage.Personnage.combat"><code class="docutils literal notranslate"><span class="pre">Personnage.combat()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="personnage.html#personnage.Personnage.degats"><code class="docutils literal notranslate"><span class="pre">Personnage.degats()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="personnage.html#personnage.Personnage.i"><code class="docutils literal notranslate"><span class="pre">Personnage.i</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="personnage.html#personnage.Personnage.n"><code class="docutils literal notranslate"><span class="pre">Personnage.n</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="personnage.html#personnage.Personnage.p"><code class="docutils literal notranslate"><span class="pre">Personnage.p</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="personnage.html#personnage.Personnage.soigner"><code class="docutils literal notranslate"><span class="pre">Personnage.soigner()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="personnage.html#personnage.Personnage.v"><code class="docutils literal notranslate"><span class="pre">Personnage.v</span></code></a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="gamma.html">gamma module</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="gamma.html#gamma.bonjour"><code class="docutils literal notranslate"><span class="pre">bonjour()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="joueur.html">joueur module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="joueur.html#joueur.Joueur"><code class="docutils literal notranslate"><span class="pre">Joueur</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="joueur.html#joueur.Joueur.e"><code class="docutils literal notranslate"><span class="pre">Joueur.e</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="joueur.html#joueur.Joueur.m"><code class="docutils literal notranslate"><span class="pre">Joueur.m</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="joueur.html#joueur.Joueur.n"><code class="docutils literal notranslate"><span class="pre">Joueur.n</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="joueur.html#joueur.Joueur.nperso"><code class="docutils literal notranslate"><span class="pre">Joueur.nperso()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="joueur.html#joueur.Joueur.perso"><code class="docutils literal notranslate"><span class="pre">Joueur.perso()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="joueur.html#joueur.Joueur.perso_num"><code class="docutils literal notranslate"><span class="pre">Joueur.perso_num()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="joueur.html#joueur.Joueur.perso_pse"><code class="docutils literal notranslate"><span class="pre">Joueur.perso_pse()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="joueur.html#joueur.Joueur.sperso"><code class="docutils literal notranslate"><span class="pre">Joueur.sperso()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="joueur.html#joueur.Joueur.sperso_num"><code class="docutils literal notranslate"><span class="pre">Joueur.sperso_num()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="joueur.html#joueur.Joueur.sperso_pse"><code class="docutils literal notranslate"><span class="pre">Joueur.sperso_pse()</span></code></a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="point.html">point module</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="point.html#point.Point"><code class="docutils literal notranslate"><span class="pre">Point</span></code></a><ul>
-<li class="toctree-l3"><a class="reference internal" href="point.html#point.Point.distanceCoord"><code class="docutils literal notranslate"><span class="pre">Point.distanceCoord()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="point.html#point.Point.distancePoint"><code class="docutils literal notranslate"><span class="pre">Point.distancePoint()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="point.html#point.Point.x"><code class="docutils literal notranslate"><span class="pre">Point.x</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="point.html#point.Point.y"><code class="docutils literal notranslate"><span class="pre">Point.y</span></code></a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="point.html#point.principale"><code class="docutils literal notranslate"><span class="pre">principale()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="guerrier.html">guerrier module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="guerrier.html#guerrier.Guerrier"><code class="docutils literal notranslate"><span class="pre">Guerrier</span></code></a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="rectangle.html">rectangle module</a></li>
-<li class="toctree-l1"><a class="reference internal" href="triangle.html">triangle module</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="triangle.html#triangle.Triangle"><code class="docutils literal notranslate"><span class="pre">Triangle</span></code></a><ul>
-<li class="toctree-l3"><a class="reference internal" href="triangle.html#triangle.Triangle.a"><code class="docutils literal notranslate"><span class="pre">Triangle.a</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="triangle.html#triangle.Triangle.c"><code class="docutils literal notranslate"><span class="pre">Triangle.c</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="triangle.html#triangle.Triangle.hypothenuse"><code class="docutils literal notranslate"><span class="pre">Triangle.hypothenuse()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="triangle.html#triangle.Triangle.isocele"><code class="docutils literal notranslate"><span class="pre">Triangle.isocele()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="triangle.html#triangle.Triangle.o"><code class="docutils literal notranslate"><span class="pre">Triangle.o</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="triangle.html#triangle.Triangle.perimetre"><code class="docutils literal notranslate"><span class="pre">Triangle.perimetre()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="triangle.html#triangle.Triangle.surface"><code class="docutils literal notranslate"><span class="pre">Triangle.surface()</span></code></a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="triangle.html#triangle.principale"><code class="docutils literal notranslate"><span class="pre">principale()</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="mage.html">mage module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="mage.html#mage.Mage"><code class="docutils literal notranslate"><span class="pre">Mage</span></code></a></li>
 </ul>
 </li>
 </ul>
@@ -321,12 +298,12 @@
       <footer>
         
         <div class="related-pages">
-          <a class="next-page" href="exemple1.html">
+          <a class="next-page" href="personnage.html">
               <div class="page-info">
                 <div class="context">
                   <span>Next</span>
                 </div>
-                <div class="title">exemple1 module</div>
+                <div class="title">personnage module</div>
               </div>
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
             </a>

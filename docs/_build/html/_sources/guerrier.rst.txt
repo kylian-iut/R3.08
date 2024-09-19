@@ -1,7 +1,7 @@
-triangle module
+guerrier module
 ===============
 
-.. automodule:: triangle
+.. automodule:: guerrier
    :members:
    :undoc-members:
    :show-inheritance:

@@ -1,5 +1,6 @@
 from personnage import Personnage
 
+
 class Guerrier(Personnage):
     def __init__(self, pseudo, niveau):
         """
@@ -9,8 +10,8 @@ class Guerrier(Personnage):
         """
         self.__p = pseudo
         self.__n = niveau
-        self.__v = niveau*8+4
-        self.__i = niveau*4+6
+        self.__v = niveau * 8 + 4
+        self.__i = niveau * 4 + 6
         super().__init__(self.__p, self.__n)
         super().v(self.__v)
         super().i(self.__i)

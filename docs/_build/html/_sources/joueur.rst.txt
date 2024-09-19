@@ -1,7 +1,7 @@
-gamma module
-============
+joueur module
+=============
 
-.. automodule:: gamma
+.. automodule:: joueur
    :members:
    :undoc-members:
    :show-inheritance:

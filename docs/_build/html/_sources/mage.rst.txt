@@ -1,7 +1,7 @@
-bravo module
-============
+mage module
+===========
 
-.. automodule:: bravo
+.. automodule:: mage
    :members:
    :undoc-members:
    :show-inheritance:
