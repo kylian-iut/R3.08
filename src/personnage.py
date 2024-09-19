@@ -66,6 +66,10 @@ class Personnage:
             raise ValueError("i n'est pas un entier")
 
     def attaque(self, camarade):
+        """
+            Méthode qui permet l'attaque conventionnel entre deux Personnanges
+        :param camarade: autre Personnage
+        """
         if self.__i == camarade.__i:
             self.__v -= camarade.degats()
             camarade.__v -= self.degats()
@@ -78,16 +82,30 @@ class Personnage:
             if camarade.__v > 0:
                 self.__v -= camarade.degats()
     def combat(self, camarade):
+        """
+            Méthode qui utilise en boucle la méthode attaque jusqu'à que la vie d'un Personnage tombe à 0
+        :param camarade: autre Personnage
+        """
         while self.__v > 0 and camarade.__v > 0:
             self.attaque(camarade)
 
     def soigner(self) -> int:
+        """
+            Méthode qui permet de réstaurer la vie du Personnage
+        :return: Nombre de point de vie
+        """
         if self.__v < self.__n:
             self.__v = self.__n
         return self.__v
 
     def degats(self) -> int:
+        """
+            Méthode qui fournit la quanbtité de dégat infligé par le Personnage
+        :return: Quantité de dégats
+        """
         return self.__n
+
+
 
 
 
