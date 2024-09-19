@@ -53,7 +53,7 @@ class Joueur:
         :return: Numéro du personnage chez le joueur
         """
         self.e.append(perso)
-        return len(self.__e)
+        return len(self.e)
 
     def perso_num(self,numero : int):
         """
@@ -61,7 +61,7 @@ class Joueur:
         :param numero: Numéro du Personnage chez le joueur
         """
         try:
-            return self.__e[numero]
+            return self.e[numero]
         except all as err:
             exit(err)
 
@@ -71,8 +71,8 @@ class Joueur:
         :param pseudo: Pseudo du Personnage
         :return: Personnage
         """
-        for perso in self.__e:
-            if perso.__p == pseudo:
+        for perso in self.e:
+            if perso.p == pseudo:
                 return perso
 
     def perso(self, perso:Personnage):
@@ -81,7 +81,7 @@ class Joueur:
         :param perso: Personnage
         :return: Personnage
         """
-        for ele in self.__e:
+        for ele in self.e:
             if perso.__eq__ == ele.__eq__:
                 return ele
     def sperso_num(self, numero : int):
@@ -100,8 +100,8 @@ class Joueur:
         :param pseudo: Pseudo du Personnage
         """
         i=0
-        for perso in self.__e:
-            if perso.__p == pseudo:
+        for perso in self.e:
+            if perso.p == pseudo:
                 self.e.pop(i)
             i+=1
     def sperso(self, perso : Personnage):
@@ -110,7 +110,7 @@ class Joueur:
         :param perso: Personnage
         """
         i=0
-        for ele in self.__e:
+        for ele in self.e:
             if perso.__eq__ == ele.__eq__:
                 self.e.pop(i)
             i+=1

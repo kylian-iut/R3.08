@@ -70,23 +70,23 @@ class Personnage:
             Méthode qui permet l'attaque conventionnel entre deux Personnanges
         :param camarade: autre Personnage
         """
-        if self.__i == camarade.__i:
+        if self.i == camarade.i:
             self.v -= camarade.degats()
             camarade.v -= self.degats()
-        elif self.__i < camarade.__i:
+        elif self.i < camarade.i:
             self.v -= camarade.degats()
-            if self.__v > 0:
+            if self.v > 0:
                 camarade.v -= self.degats()
         else:
             camarade.v -= self.degats()
-            if camarade.__v > 0:
+            if camarade.v > 0:
                 self.v -= camarade.degats()
     def combat(self, camarade):
         """
             Méthode qui utilise en boucle la méthode attaque jusqu'à que la vie d'un Personnage tombe à 0
         :param camarade: autre Personnage
         """
-        while self.__v > 0 and camarade.__v > 0:
+        while self.v > 0 and camarade.v > 0:
             self.attaque(camarade)
 
     def soigner(self) -> int:
@@ -94,16 +94,16 @@ class Personnage:
             Méthode qui permet de réstaurer la vie du Personnage
         :return: Nombre de point de vie
         """
-        if self.__v < self.__n:
-            self.__v = self.__n
-        return self.__v
+        if self.v < self.n:
+            self.v = self.n
+        return self.v
 
     def degats(self) -> int:
         """
             Méthode qui fournit la quanbtité de dégat infligé par le Personnage
         :return: Quantité de dégats
         """
-        return self.__n
+        return self.n
 
 
 
