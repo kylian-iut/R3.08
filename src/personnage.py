@@ -71,16 +71,16 @@ class Personnage:
         :param camarade: autre Personnage
         """
         if self.__i == camarade.__i:
-            self.__v -= camarade.degats()
-            camarade.__v -= self.degats()
+            self.v -= camarade.degats()
+            camarade.v -= self.degats()
         elif self.__i < camarade.__i:
-            self.__v -= camarade.degats()
+            self.v -= camarade.degats()
             if self.__v > 0:
-                camarade.__v -= self.degats()
+                camarade.v -= self.degats()
         else:
-            camarade.__v -= self.degats()
+            camarade.v -= self.degats()
             if camarade.__v > 0:
-                self.__v -= camarade.degats()
+                self.v -= camarade.degats()
     def combat(self, camarade):
         """
             Méthode qui utilise en boucle la méthode attaque jusqu'à que la vie d'un Personnage tombe à 0
