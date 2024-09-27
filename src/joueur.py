@@ -53,7 +53,11 @@ class Joueur:
         :return: Numéro du personnage chez le joueur
         """
         self.e.append(perso)
-        return len(self.e)
+        if len(self.e) > self.__m:
+            self.e.pop(self.__m)
+            return f"Maximum de personnage atteint : {self.__m}"
+        else:
+            return len(self.e)
 
     def perso_num(self,numero : int):
         """
@@ -114,5 +118,11 @@ class Joueur:
             if perso.__eq__ == ele.__eq__:
                 self.e.pop(i)
             i+=1
+
+kyks = Joueur("Kylian",1)
+bob = Personnage("Bob")
+bobette = Personnage("Bobette")
+print(kyks.nperso(bob))
+print(kyks.nperso(bobette))
 
 
