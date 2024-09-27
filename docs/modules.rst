@@ -4,7 +4,8 @@ src
 .. toctree::
    :maxdepth: 4
 
-   exemple1
-   alpha
-   bravo
-   gamma
+   cercle
+   exercice1
+   point
+   rectangle
+   triangle

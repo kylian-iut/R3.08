@@ -1,7 +1,0 @@
-alpha module
-============
-
-.. automodule:: alpha
-   :members:
-   :undoc-members:
-   :show-inheritance:
