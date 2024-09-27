@@ -1,7 +1,5 @@
 from typing import List
-
 from point import Point
-from src.point import Point
 
 
 class Rectangle:

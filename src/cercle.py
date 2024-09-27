@@ -56,8 +56,8 @@ class Cercle:
             Méthode qui vérifie si le cercle croise un autre
         :return: VRAI = Il y a une intersection, FAUX = Il n'y a pas d'intersection
         """
-        d = self.__c.distancePoint(camarade.__c)
-        if d - self.__r - camarade.__r <= 0:
+        d = self.c.distancePoint(camarade.c)
+        if d - self.r - camarade.r <= 0:
             return True
         else:
             return False
